@@ -1,0 +1,43 @@
+.header {
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 25px 0;
+    nav {
+        display: flex;
+        gap: 28px;
+        a {
+            position: relative;
+        }
+        a:after {
+            content: "";
+            position: absolute;
+            background-color: #44944A;
+            height: 2px;
+            width: 0;
+            left: 0;
+            bottom: -3px;
+            transition: width 0.3s;
+        }
+        a:hover:after {
+            width: 100%;
+        }
+    }
+    .socials {
+        display: flex;
+        gap: 8px;
+        svg {
+            padding: 2px;
+            border: 1px solid #000;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        svg:hover {
+            fill: #fff;
+            background: #44944A;
+        }
+    }
+}

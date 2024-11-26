@@ -1,0 +1,87 @@
+@import "@styles/breakpoints.module.scss";
+
+.text {
+  color: var(--Gray-900, #101828);
+
+  &.header1 {
+    font-size: 60px;
+    line-height: 72px;
+    @include breakpoint("mobile") {
+      font-size: 48px;
+      line-height: 56px;
+    }
+  }
+  &.header2 {
+    font-size: 48px;
+    line-height: 56px;
+    @include breakpoint("mobile") {
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
+  &.header3 {
+    font-size: 40px;
+    line-height: 48px;
+    @include breakpoint("mobile") {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+  &.header4 {
+    font-size: 36px;
+    line-height: 40px;
+    @include breakpoint("mobile") {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+  &.header5 {
+    font-size: 20px;
+    line-height: 32px;
+    @include breakpoint("mobile") {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  &.header6 {
+    font-size: 18px;
+    line-height: 24px;
+    @include breakpoint("mobile") {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  &.body1 {
+    font-size: 16px;
+    line-height: 24px;
+    @include breakpoint("mobile") {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  &.body2 {
+    font-size: 14px;
+    line-height: 20px;
+    @include breakpoint("mobile") {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  &.body3 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  &.regular {
+    font-weight: 400;
+  }
+  &.medium {
+    font-weight: 500;
+  }
+  &.semibold {
+    font-weight: 600;
+  }
+  &.bold {
+    font-weight: 700;
+  }
+}
